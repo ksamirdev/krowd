@@ -1,10 +1,10 @@
-# Neobrains Chat
+# Krowd
 
 Real-time chat app built on T3 stack (TypeScript, Next.JS, Socket.io, Prisma).
 
-# Neobrains Websocket
+# Krowd Websocket
 
-You can find the websocket code [here](https://github.com/samocodes/neobrains-websocket)
+You can find the websocket code [here](https://github.com/samocodes/krowd-websocket)
 
 # Got work? Contact me!
 

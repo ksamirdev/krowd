@@ -58,7 +58,7 @@ export default function Layout() {
   return (
     <div className="flex select-none flex-col rounded-xl  border-2 border-pink-700 p-5 max-sm:max-h-[80vh] max-sm:min-h-[80vh] max-sm:min-w-[95vw] max-sm:max-w-[95vw] sm:max-h-[80vh] sm:min-h-[80vh] sm:min-w-[95vw] sm:max-w-[95vw] md:max-h-[60vh] md:min-h-[60vh] md:min-w-[80vw] md:max-w-[80vw] lg:max-h-[60vh] lg:min-h-[60vh] lg:min-w-[80vw] lg:max-w-[80vw] xl:max-h-[70vh] xl:min-h-[70vh] xl:min-w-[60vw] xl:max-w-[60vw]">
       <span className="flex flex-col items-center">
-        <span className="text-center text-xl">Neobrains Chat</span>
+        <span className="text-center text-xl">Krowd</span>
         <ActiveUsers socket={socket} />
       </span>
       <ChatsList data={messages} />

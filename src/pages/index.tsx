@@ -8,12 +8,8 @@ const ChatPage: NextPage = () => {
   return (
     <div className="flex h-screen w-screen flex-col items-center justify-center bg-neutral-900 text-neutral-100 max-sm:justify-start max-sm:pt-4">
       <Head>
-        <title>Neobrains Chat</title>
-        <link
-          rel="shortcut icon"
-          href="neobrains-chat.webp"
-          type="image/x-icon"
-        />
+        <title>Krowd</title>
+        <link rel="shortcut icon" href="krowd.webp" type="image/x-icon" />
       </Head>
       <AuthSession />
     </div>
