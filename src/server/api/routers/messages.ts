@@ -9,6 +9,7 @@ export const messagesRouter = createTRPCRouter({
         author: {
           select: {
             name: true,
+            image: true,
           },
         },
       },
@@ -18,15 +19,20 @@ export const messagesRouter = createTRPCRouter({
   createMessage: protectedProcedure
     .input(z.object({ userId: z.string(), message: z.string() }))
     .mutation(async ({ input }) => {
-      const prismaData = {
+      const data = await prisma.messages.create({
         data: {
           message: input.message,
           userId: input.userId,
         },
-      };
-
-      const data = await prisma.messages.create(prismaData);
-
+        include: {
+          author: {
+            select: {
+              name: true,
+              image: true,
+            },
+          },
+        },
+      });
       return data;
     }),
 });
